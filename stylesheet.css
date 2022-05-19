@@ -1,0 +1,340 @@
+/* Background color #ecede9 
+
+Font color #404041 
+
+Blue #2b10a2 
+
+yellow  #f5ac0f */
+
+body {
+    background-color: #ecede9;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #404041;
+}
+
+p {
+    font-size: medium;
+    color: #404041;
+    width: 400px;
+    text-align: center;
+}
+
+#about-txt {
+    font-size: large;
+}
+
+
+/* Mobile Values */
+
+header {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+header>img {
+    width: 23rem;
+    max-width: 100%;
+}
+
+header>nav {
+    display: flex;
+    flex-direction: row;
+}
+
+a {
+    padding: 1rem;
+    font-size: large;
+    text-decoration: none;
+    color: #404041;
+}
+
+a:hover {
+    color: #2b10a2;
+    text-decoration: underline;
+}
+
+.block {
+    width: 500px;
+    padding: 15px;
+    margin: 25px 100px;
+    background-color: #2b10a2;
+    color: #ecede9;
+    text-align: center;
+}
+
+
+/* Personal */
+
+main {
+    margin: 2rem;
+}
+
+
+/* mobile only */
+
+#loan {
+    display: none;
+}
+
+#p-check,
+#p-save,
+#cl,
+#p-check {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+/* business */
+
+#b-bot {
+    display: flex;
+    flex-direction: row;
+}
+
+#bus,
+#b-loans,
+#b-sba_loans,
+#b-top,
+#b-check,
+#b-save {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#b-loans>p {
+    margin-left: 100px;
+}
+
+#b-sba_loans>p {
+    margin-right: 100px;
+}
+
+#half1-block {
+    width: 250px;
+    padding: 15px 0 15px 15px;
+    margin: 25px 0 0 100px;
+    background-color: #2b10a2;
+    color: #ecede9;
+    text-align: center;
+}
+
+#half2-block {
+    width: 250px;
+    padding: 15px 15px 15px 0;
+    margin: 25px 100px 0 0;
+    background-color: #2b10a2;
+    color: #ecede9;
+    text-align: center;
+}
+
+
+/* investing */
+
+#retire,
+#cd,
+#ira {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#investing>section>img {
+    display: none;
+}
+
+
+/* account */
+
+#account {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#login,
+#create {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 500px;
+    padding: 20px;
+    margin: 25px 100px;
+    background-color: #2b10a2;
+    color: #ecede9;
+}
+
+label,
+input[type=text],
+input[type=password] {
+    display: block;
+    margin: .5rem 0;
+}
+
+input[type=text],
+input[type=password] {
+    width: 50%;
+    padding: .5rem;
+    font-size: 1rem;
+}
+
+input:focus[type=text],
+input:focus[type=password] {
+    outline: none;
+    border: 2.5px solid #f5ac0f;
+}
+
+
+/* about */
+
+.about {
+    position: relative;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 700px;
+}
+
+#about {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.about>img {
+    width: 550px;
+    padding: 1rem;
+}
+
+#about-txt {
+    position: absolute;
+    bottom: -10px;
+    right: 50px;
+    background-color: #2b10a2;
+    width: 200px;
+    padding: 15px;
+    color: #ecede9;
+}
+
+#about-cont {
+    padding: 1rem;
+    margin: 2rem;
+}
+
+
+/* Wide values (Desktop Values) */
+
+@media(min-width:1000px) {
+    /* personal */
+    #loan {
+        display: flex;
+        width: 530px;
+        margin: 25px 0;
+    }
+    #p-web,
+    #p-cl {
+        flex-direction: row;
+        display: flex;
+        justify-content: center;
+        margin: 2rem;
+    }
+    #p-check,
+    #p-save,
+    #cl,
+    #p-check {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .block {
+        width: 500px;
+        padding: 15px;
+        margin: 25px 0;
+        background-color: #2b10a2;
+        color: #ecede9;
+        text-align: center;
+    }
+    /* Business */
+    #bus,
+    #b-loans,
+    #b-sba_loans,
+    #b-check,
+    #b-save {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    #b-top,
+    #b-bot {
+        display: flex;
+        flex-direction: row;
+        margin: 2rem;
+    }
+    #half1-block,
+    #half2-block {
+        width: 500px;
+        padding: 15px;
+        margin: 25px 0;
+        background-color: #2b10a2;
+        color: #ecede9;
+        text-align: center;
+    }
+    #b-loans>p {
+        margin-left: 0;
+    }
+    #b-sba_loans>p {
+        margin-right: 0;
+    }
+    /* Investing */
+    #retire,
+    #cd,
+    #ira {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    #i-top,
+    #i-bot {
+        display: flex;
+        flex-direction: row;
+    }
+    #investing>section>img {
+        display: flex;
+        width: 530px;
+        margin: 25px 0;
+    }
+    #investing {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .about>img {
+        width: 800px;
+        padding: 1rem;
+        height: 400px;
+    }
+    #about-txt {
+        position: absolute;
+        bottom: -10px;
+        right: -65px;
+        background-color: #2b10a2;
+        width: 200px;
+        padding: 15px;
+        color: #ecede9;
+    }
+    #login,
+    #create {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 500px;
+        padding: 50px 150px;
+        margin: 25px 100px;
+        background-color: #2b10a2;
+        color: #ecede9;
+    }
+}
