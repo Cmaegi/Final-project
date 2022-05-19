@@ -229,6 +229,17 @@ input:focus[type=password] {
 /* Wide values (Desktop Values) */
 
 @media(min-width:1000px) {
+    header {
+        display: flex;
+        align-items: center;
+        flex-direction: row;
+        justify-content: center;
+        margin: 2rem;
+    }
+    header>img {
+        width: 250px;
+        max-width: 100%;
+    }
     /* personal */
     #loan {
         display: flex;
